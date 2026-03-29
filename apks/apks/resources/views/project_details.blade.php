@@ -16,7 +16,7 @@
                 <nav aria-label="breadcrumb" class="breadcrumb-wrap">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('activity.project') }}">Project Categories</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('activity.project') }}">Projects</a></li>
                         @if($project->category)
                             <li class="breadcrumb-item"><a href="{{ route('activity.project.category', $project->category->category_slug) }}">{{ $project->category->category_name }}</a></li>
                         @endif

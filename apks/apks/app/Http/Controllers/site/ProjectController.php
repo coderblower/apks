@@ -12,17 +12,27 @@ class ProjectController extends Controller
     //
 
     public function index(){
+        $getProjects = Project::with('category')
+            ->where('status', 1)
+            ->orderBy('created_at', 'DESC')
+            ->paginate(10);
+
+        return view('project', compact('getProjects'));
+    }
+
+    public function categories()
+    {
         $categories = ProjectCategory::where('status', 1)
             ->whereHas('projects', function ($query) {
                 $query->where('status', 1);
             })
             ->withCount(['projects' => function ($query) {
-            $query->where('status', 1);
-        }])
+                $query->where('status', 1);
+            }])
             ->orderBy('category_name')
             ->get();
 
-        return view('project', compact('categories'));
+        return view('project_categories', compact('categories'));
     }
 
     public function category($slug)
@@ -35,7 +45,8 @@ class ProjectController extends Controller
             return abort(404);
         }
 
-        $getProjects = Project::where('status', 1)
+        $getProjects = Project::with('category')
+            ->where('status', 1)
             ->where('project_category_id', $category->id)
             ->orderBy('created_at', 'DESC')
             ->paginate(10);

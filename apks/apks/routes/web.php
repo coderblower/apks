@@ -70,7 +70,8 @@ Route::get('/activity/programme/{slug}', [ProgramController::class, 'show'])->na
 
 // activity -- projects
 Route::get('/activity/project', [ProjectController::class, 'index'])->name('activity.project');
-Route::get('/activity/project/category/{slug}', [ProjectController::class, 'category'])->name('activity.project.category');
+Route::get('/activity/project-category', [ProjectController::class, 'categories'])->name('activity.project.categories');
+Route::get('/activity/project-category/{slug}', [ProjectController::class, 'category'])->name('activity.project.category');
 Route::get('/activity/project/{slug}', [ProjectController::class, 'show'])->name('activity.project.show');
 // activity -- events
 Route::get('/activity/event', [EventsController::class, 'index'])->name('activity.event');
