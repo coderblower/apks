@@ -28,6 +28,7 @@
         .project-category-card h3 {
             margin-bottom: 14px;
         }
+        
         .project-category-card p {
             margin-bottom: 18px;
             color: #475569;
