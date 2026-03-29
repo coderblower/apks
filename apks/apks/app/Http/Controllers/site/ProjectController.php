@@ -17,7 +17,17 @@ class ProjectController extends Controller
             ->orderBy('created_at', 'DESC')
             ->paginate(10);
 
-        return view('project', compact('getProjects'));
+        $categories = ProjectCategory::where('status', 1)
+            ->whereHas('projects', function ($query) {
+                $query->where('status', 1);
+            })
+            ->withCount(['projects' => function ($query) {
+                $query->where('status', 1);
+            }])
+            ->orderBy('category_name')
+            ->get();
+
+        return view('project', compact('getProjects', 'categories'));
     }
 
     public function categories()
