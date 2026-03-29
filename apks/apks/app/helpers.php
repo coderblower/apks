@@ -30,36 +30,45 @@ function organizationSummarySections(){
             'id' => 'introduction',
             'title' => 'Introduction',
             'content' => <<<'HTML'
-<p><strong>Alorpoth Kollyan Sangstha (APKS)</strong> is a Bangladeshi non-political, non-profit, non-sectarian, volunteer-based social welfare and nongovernmental development organization. Officially launched in 2012, APKS works to address poverty, ignorance, hunger, ill-health, climate vulnerability, unsafe housing, trafficking risks, and social injustice among disadvantaged communities.</p>
-<p>APKS focuses especially on women, children, youth, differently abled people, ethnic communities, migrant and refugee communities, and disaster-affected families. The organization promotes community empowerment, education, health, livelihoods, environmental protection, and human rights through practical, locally grounded development work.</p>
-<p>Registered under the Department of Social Welfare and the Department of Youth and Sports, APKS operates without discrimination on the basis of class, tribe, origin, location, religion, or gender.</p>
+<p>APKS empowers communities, promotes education, and mobilizes resources to improve lifestyles and livelihoods. It employs innovative development strategies to achieve sustainability and provides comprehensive support to disadvantaged individuals, helping them attain self-sufficiency and control over their lives.</p>
+<p>APKS also works to prevent trafficking, protect the environment, and empower vulnerable populations. The organization is committed to protecting human rights and engages in public consultations, mass campaigns, and innovative initiatives with stakeholder support.</p>
+<p>As a non-profit organization, APKS stands up for people’s rights and operates without discrimination based on class, tribe, origin, area, religion, or gender. It advocates for universal peace and strives to make positive changes on the planet through kindness, cooperation, and positive thinking.</p>
+<p>Officially launched in 2012, APKS focuses on alleviating poverty and improving the livelihoods of marginalized individuals, particularly distressed women and children, by promoting social justice and human rights.</p>
 HTML
         ],
         [
             'id' => 'background',
             'title' => 'Background',
             'content' => <<<'HTML'
-<p>APKS was born from compassion and public service during the aftermath of the Rana Plaza tragedy in 2013. Under the leadership of Shamim Ara Sultana, volunteers stepped forward with blood donations, food, medical supplies, and direct emergency support for affected people and families.</p>
-<p>That moment exposed a deeper need for long-term, community-based development beyond short-term charity. APKS was formally organized to create sustainable impact for underprivileged, vulnerable, and marginalized communities across Bangladesh.</p>
-<p>Its early work focused on women enterprise development and support for poor women and vulnerable children. Over time, APKS expanded into a broader, multidimensional development model covering education, rights, health, livelihoods, protection, and resilience.</p>
+<p>APKS was born from compassion during the Rana Plaza tragedy with a commitment to create long-term social impact for underprivileged, vulnerable, and marginalized communities in Bangladesh.</p>
+<p>The tragic collapse of the Rana Plaza garment factory in 2013, which resulted in numerous casualties, was a pivotal moment for APKS. Under the dynamic leadership of Shamim Ara Sultana, volunteers provided crucial aid, including blood donations, food, and medical supplies. This tragedy highlighted the urgent need for sustainable development initiatives and led to the formal establishment of APKS.</p>
+<p>APKS operates in Dhaka and stands out as a leading NGO focused on women and children. It was founded by youth development activists and social workers with strong backgrounds in women’s enterprise development. This gave the organization both committed leadership and broad field-based experience in socio-economic, environmental, and health development.</p>
+<p>In 2014, APKS initially focused on women enterprise development for poor, marginalized, disadvantaged, and vulnerable women and children. Over time, it expanded into a holistic and multidimensional development approach that includes women’s rights, child labor, childhood development, and basic education.</p>
+<p><strong>We believe in community-led, need-driven development.</strong></p>
 HTML
         ],
         [
             'id' => 'motivation',
             'title' => 'Motivation',
             'content' => <<<'HTML'
-<p>APKS believes sustainable development must be need-driven, community-led, and aligned with the real conditions people face in urban settlements, semi-urban areas, rural communities, hill tracts, coastal belts, border regions, and refugee contexts.</p>
-<p>The organization undertakes practical activities in education, health, hygiene, nutrition, sanitation, income generation, awareness building, and community strengthening. It collaborates with government departments, local bodies, donors, development agencies, religious leaders, and community representatives to maximize impact.</p>
-<p>Its motivation is grounded in dignity, justice, and self-reliance: helping people improve their own lives rather than remain dependent on one-time relief.</p>
+<p>APKS is a community-based charity that supports civil administration systems in migrant settlements and increases support for host communities and local structures. It undertakes need-based activities such as education, health, hygiene, nutrition, sanitation, and income-generating activities for target participants with support from various donors.</p>
+<p>APKS collaborates with government departments to implement programs effectively. It aligns its work with the Sustainable Development Goals (SDGs) by serving deprived urban communities, ethnic groups in remote villages, hill tracts, coastal areas, and border regions.</p>
+<ul>
+    <li>Uses a community-based approach to support civil administration systems in migrant settlements.</li>
+    <li>Performs need-based activities in education, health, hygiene, nutrition, sanitation, and income generation.</li>
+    <li>Promotes moral living, religious harmony, and truth through innovative awareness work.</li>
+    <li>Focuses on sustainable development rather than one-time charity.</li>
+    <li>Works with funding and partnerships from the Government of Bangladesh, local government bodies, and national and international development agencies.</li>
+</ul>
 HTML
         ],
         [
             'id' => 'approach',
             'title' => 'Approach',
             'content' => <<<'HTML'
-<p>APKS follows a community-centered, participatory, and demand-responsive approach. It engages local people as decision-makers, promotes community ownership, builds local institutions, and uses available local resources to increase sustainability and reduce project costs.</p>
-<p>The organization links social development with economic empowerment, climate resilience, WASH, education, health, and rights-based programming. It also promotes transparency, accountability, innovation, adaptation, and good governance in program execution.</p>
-<p>APKS works through partnerships with community-based organizations, local administration, development partners, and other stakeholders while keeping a strong focus on women, children, youth, and hard-to-reach populations.</p>
+<p>Our vision is to create a society where youth, women, children, disabled individuals, and ethnic communities enjoy their rights and live dignified lives in a democratic environment. We envision a world free from discrimination, where everyone has access to health, education, food, accommodation, and employment.</p>
+<p>APKS is dedicated to supporting individuals without discrimination based on class, occupation, religion, color, cultural background, ethnic community, or gender. We strive to ensure sustainable development through healthcare, gender equality, and socio-economic development.</p>
+<p>Our mission includes implementing development projects and awareness activities to bring positive social change, particularly for underprivileged, less fortunate, and ethnic communities. We aim to empower people affected by poverty, climate change, illiteracy, disease, and social injustice through legal, social, and economic programs.</p>
 HTML
         ],
         [
@@ -67,7 +76,7 @@ HTML
             'title' => 'Mission & Vision',
             'content' => <<<'HTML'
 <h4>Vision Statement</h4>
-<p>To build a democratic, just, peaceful, and discrimination-free society where women, children, youth, differently abled people, ethnic communities, and other targeted groups enjoy their rights and live dignified lives with access to health, education, food, housing, employment, and security.</p>
+<p>To create a poverty-free, educated, progressive, and happy society with peace and justice, where all people live with equality, dignity, and access to their fundamental rights.</p>
 <h4>Mission Statement</h4>
 <p>To implement inclusive development projects and awareness initiatives that improve healthcare, education, socio-economic conditions, gender equality, legal protection, and climate resilience for underprivileged, less fortunate, and marginalized communities in Bangladesh.</p>
 HTML
@@ -104,15 +113,17 @@ HTML
             'content' => <<<'HTML'
 <p>APKS works with disadvantaged and underserved populations across Bangladesh, including:</p>
 <ul>
-    <li>Disadvantaged urban communities and less fortunate semi-urban society</li>
-    <li>Most vulnerable rural communities and lower middle-class farm families</li>
-    <li>Landless small farmers and riverine communities</li>
-    <li>Marginalized ethnic minorities and tribal people</li>
-    <li>Disaster-affected people, migrants, and refugees</li>
-    <li>Women, widows, divorcees, women-headed households, and survivors of domestic abuse</li>
-    <li>Youth with special focus on adolescents, mothers, and children</li>
-    <li>Vulnerable children, differently abled people, third-gender communities, and community-based groups</li>
+    <li>Disadvantaged urban community</li>
+    <li>Less fortunate semi-urban society</li>
+    <li>Most vulnerable rural community</li>
+    <li>Marginalized ethnic minorities</li>
+    <li>Lower middle class farm families</li>
+    <li>Landless small farmers</li>
+    <li>Riverine communities</li>
+    <li>Tribal people and disaster-affected people</li>
 </ul>
+<p><strong>Particular Focus Sector:</strong> women, widow, divorcee, women-headed households, youth, adolescents, mothers and children, differently able people, and community-based organizations.</p>
+<p><strong>Particular Focus Group:</strong> vulnerable children, Bangali women, aboriginal men, tribal people, third gender, migrants, and refugees.</p>
 HTML
         ],
         [
@@ -120,11 +131,11 @@ HTML
             'title' => 'Core Values',
             'content' => <<<'HTML'
 <ul>
-    <li><strong>Integrity and Accountability:</strong> honest, transparent, and responsible conduct in all dealings.</li>
-    <li><strong>Compassion and Respect:</strong> dignity, empathy, and solidarity with people living in hardship.</li>
-    <li><strong>Social Justice and Human Rights:</strong> commitment to equality, inclusion, protection, and legal rights.</li>
-    <li><strong>Sustainability and Good Governance:</strong> green development, institutional integrity, and partnership-based implementation.</li>
-    <li><strong>Commitment and Dedication:</strong> faithful, respectful, and participatory service to the communities APKS supports.</li>
+    <li><strong>Integrity and Accountability:</strong> We are honest, open, trustworthy, and accountable in all our dealings with stakeholders, partners, and donors.</li>
+    <li><strong>Compassion and Respect:</strong> We prioritize children, women, and youth living in difficulties and respond to the most vulnerable with honor, love, affection, and respect.</li>
+    <li><strong>Social Justice and Human Rights:</strong> We believe in people’s rights, human dignity, gender equality, social inclusion, and safety nets.</li>
+    <li><strong>Sustainability and Good Governance:</strong> We are committed to a green environment, networking, partnerships, and responsible governance.</li>
+    <li><strong>Commitment and Dedication:</strong> We remain faithful and steadfast in serving communities with enthusiasm, integrity, humility, loyalty, participation, and respect for all religions.</li>
 </ul>
 HTML
         ],
@@ -133,18 +144,17 @@ HTML
             'title' => 'Areas of Intervention',
             'content' => <<<'HTML'
 <ul>
-    <li><strong>Education:</strong> non-formal education, pre-primary education, formal education support, scholarships.</li>
-    <li><strong>Advocacy:</strong> lobbying, good governance, capacity development, trafficking prevention, legal support, and dispute settlement.</li>
-    <li><strong>Agriculture:</strong> crop diversification, seed promotion, production support, and technology transfer.</li>
-    <li><strong>Environment and Forestry:</strong> renewable energy, nursery support, tree plantation, and environmental awareness.</li>
-    <li><strong>Social Development:</strong> mobilization, awareness campaigns, support for differently abled people, and optimum use of local resources.</li>
-    <li><strong>Fisheries and Livestock:</strong> fish culture, poultry, hatchery, dairy, goat rearing, and biomass initiatives.</li>
-    <li><strong>Health:</strong> emergency care, treatment aid, family planning, nutrition, water and sanitation, nursing, and midwifery.</li>
-    <li><strong>Skill Development:</strong> soft skills, hard skills, vocational training, life skills, and entrepreneurship development.</li>
-    <li><strong>Disaster Management:</strong> pre-disaster awareness, relief distribution, rehabilitation, and resilience-building.</li>
-    <li><strong>Micro Finance:</strong> microcredit, microenterprise support, savings, and flexible finance for hard-core poor households.</li>
+    <li><strong>Education:</strong> non-formal education, pre-primary education, formal education, and education scholarship.</li>
+    <li><strong>Advocacy Program:</strong> advocacy and lobbying, good governance, capacity development, women and child trafficking prevention, human rights and gender equality, legal support, dispute and settlement.</li>
+    <li><strong>Agriculture:</strong> agricultural production, crop diversification, seed promotion, production and disbursement, technology transfer.</li>
+    <li><strong>Environment, Forestry, and Social Development:</strong> technology transfer, awareness, mobilization and campaign, health institution support, fisheries and livestock, fish culture, poultry and hatchery, biomass plant and forestry, renewable energy, nursery and tree plantation, vegetable gardening, shelter support, dairy and goat rearing.</li>
+    <li><strong>Healthcare:</strong> emergency health care, health camp, treatment aid, health and family planning, nutrition, water and sanitation, nursing and midwifery.</li>
+    <li><strong>Skill Development:</strong> soft skill development, hard skill development, vocational training.</li>
+    <li><strong>Entrepreneurship Development:</strong> life-skill venture promotion, commercial enterprise development, social business development, marketing and networking development.</li>
+    <li><strong>Disaster Management:</strong> pre-disaster awareness, post-disaster relief distribution, rehabilitation support.</li>
+    <li><strong>Micro Finance:</strong> micro credit and micro enterprise, technical micro finance, flexible micro credit for hard core poor households, savings and need-based financial support.</li>
 </ul>
-<p>APKS currently works across parts of Dhaka Division, Rangpur Division, and Chittagong Division.</p>
+<p><strong>Operational Geography:</strong> Dhaka Division, Rangpur Division, and Chittagong Division.</p>
 HTML
         ],
         [

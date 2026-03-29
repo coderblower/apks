@@ -22,25 +22,37 @@
             text-decoration: none;
         }
         .org-summary-section {
-            padding: 26px 0;
-            border-top: 1px solid #e5e7eb;
+            padding: 32px;
+            border: 1px solid #e5e7eb;
+            border-radius: 18px;
+            background: #fff;
+            box-shadow: 0 16px 36px rgba(15, 23, 42, 0.04);
+            margin-bottom: 22px;
         }
         .org-summary-section:first-child {
-            border-top: 0;
-            padding-top: 0;
+            padding-top: 32px;
         }
         .org-summary-section h3 {
             margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #eaf2ea;
         }
         .org-summary-section h4 {
             margin-top: 18px;
             margin-bottom: 10px;
+            color: #2f6b35;
+        }
+        .org-summary-section p {
+            color: #334155;
+            line-height: 1.8;
         }
         .org-summary-section ul {
             padding-left: 20px;
+            margin-bottom: 0;
         }
         .org-summary-section li {
             margin-bottom: 10px;
+            color: #334155;
         }
         .org-summary-hero {
             border-radius: 16px;
@@ -51,6 +63,11 @@
             width: 100%;
             max-height: 500px;
             object-fit: cover;
+        }
+        @media (max-width: 767px) {
+            .org-summary-section {
+                padding: 22px;
+            }
         }
     </style>
     <!-- Page Breadcrumbs Start -->

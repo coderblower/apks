@@ -12,6 +12,8 @@ use App\Models\DonationPackage;
 use App\Models\NewsletterEmail;
 use App\Models\Notice;
 use App\Models\PartnerBrand;
+use App\Models\Project;
+use App\Models\ProjectCategory;
 use App\Models\Report;
 use App\Models\Team;
 use Illuminate\Http\Request;
@@ -27,7 +29,22 @@ class HomeController extends Controller
         $get_advisor = Team::where('member_board_access','advisor')->latest('created_at',4)->get();
         $client_brands = PartnerBrand::where('status',1)->get();
         $getCounter = CounterSection::limit(4)->get();
-        return view('index', compact('sliders','aboutData','get_advisor','blogData','client_brands','getCounter'));
+        $homeProjectCategories = ProjectCategory::where('status', 1)
+            ->whereHas('projects', function ($query) {
+                $query->where('status', 1);
+            })
+            ->withCount(['projects' => function ($query) {
+                $query->where('status', 1);
+            }])
+            ->orderBy('category_name')
+            ->limit(6)
+            ->get();
+        $homeProjects = Project::with('category')
+            ->where('status', 1)
+            ->orderBy('created_at', 'DESC')
+            ->limit(4)
+            ->get();
+        return view('index', compact('sliders','aboutData','get_advisor','blogData','client_brands','getCounter','homeProjectCategories','homeProjects'));
     }
 
     public function donation(){

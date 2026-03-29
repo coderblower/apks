@@ -145,6 +145,7 @@
         </section>
         <!--Counter Style End -->
 
+        @include('template-parts.home-projects')
 
 
 
