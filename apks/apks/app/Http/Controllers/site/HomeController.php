@@ -44,7 +44,8 @@ class HomeController extends Controller
             ->orderBy('created_at', 'DESC')
             ->limit(4)
             ->get();
-        return view('index', compact('sliders','aboutData','get_advisor','blogData','client_brands','getCounter','homeProjectCategories','homeProjects'));
+        $summarySections = organizationSummarySections();
+        return view('index', compact('sliders','aboutData','get_advisor','blogData','client_brands','getCounter','homeProjectCategories','homeProjects','summarySections'));
     }
 
     public function donation(){

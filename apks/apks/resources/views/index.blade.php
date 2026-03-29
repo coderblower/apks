@@ -14,6 +14,8 @@
         @include('template-parts.about-action')
         <!--About us End-->
 
+        @include('template-parts.home-summary-sections')
+
         <!-- Welcome Home Style Start -->
         <section class="wide-tb-100 bg-green pt-0 welcome-broke-grid" id="t">
             <div class="container">
