@@ -1,0 +1,127 @@
+@extends('master')
+@section('title', 'Project Category | ' . $category->category_name)
+@section('content')
+    <style>
+        .project-list-card {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+            margin-bottom: 28px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+        .project-list-card:hover {
+            color: inherit;
+            text-decoration: none;
+            transform: translateY(-3px);
+            box-shadow: 0 24px 55px rgba(15, 23, 42, 0.1);
+            border-color: #cbd5e1;
+        }
+        .project-list-card .project-copy {
+            padding: 34px;
+        }
+        .project-list-card h3 {
+            margin-bottom: 14px;
+        }
+        .project-list-card p {
+            margin-bottom: 18px;
+            color: #475569;
+        }
+        .project-list-card .project-image-wrap {
+            height: 100%;
+            min-height: 260px;
+        }
+        .project-list-card .project-image-wrap img {
+            width: 100%;
+            height: 100%;
+            min-height: 260px;
+            object-fit: cover;
+        }
+        .project-meta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        @media (max-width: 991px) {
+            .project-list-card .project-copy {
+                padding: 24px;
+            }
+        }
+    </style>
+    <section class="breadcrumbs-page-wrap">
+        <div class="bg-fixed pos-rel breadcrumbs-page">
+            <div class="container">
+                <h1>{{ $category->category_name }}</h1>
+                <nav aria-label="breadcrumb" class="breadcrumb-wrap">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('activity.project') }}">Project Categories</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ $category->category_name }}</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <main id="body-content">
+        <section class="wide-tb-100">
+            <div class="container">
+                @if($category->category_description)
+                    <div class="mb-4">
+                        <p>{{ $category->category_description }}</p>
+                    </div>
+                @endif
+                @if($getProjects->count() > 0)
+                    <div class="row">
+                        @foreach ($getProjects as $project)
+                            @php
+                                $projectImage = $project->project_logo
+                                    ? asset('apks/public/uploads/projects/'.$project->project_logo)
+                                    : asset('assets/images/causes/featured_cause.jpg');
+                                $projectExcerpt = \Illuminate\Support\Str::limit(trim(strip_tags($project->project_description)), 260);
+                            @endphp
+                            <div class="col-12 col-lg-6">
+                                <a href="{{ route('activity.project.show', $project->project_slug) }}" class="project-list-card">
+                                    <div class="row g-0 align-items-stretch">
+                                        <div class="col-xl-7 order-2 order-xl-1">
+                                            <div class="project-copy">
+                                                <span class="project-meta">{{ $category->category_name }}</span>
+                                                <h3>{{ $project->project_title }}</h3>
+                                                <p>{{ $projectExcerpt }}</p>
+                                                <span class="read-more-line" style="font-size: 16px;"><span>View Project Details</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-5 order-1 order-xl-2">
+                                            <div class="project-image-wrap">
+                                                <img src="{{ $projectImage }}" class="img-responsive" alt="{{ $project->project_title }}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
+                    </div>
+
+                    <div class="theme-pagination mt-5">
+                        {{ $getProjects->links('vendor.pagination.custom')}}
+                    </div>
+                @else
+                    <p>No projects found in this category.</p>
+                @endif
+            </div>
+        </section>
+    </main>
+@endsection

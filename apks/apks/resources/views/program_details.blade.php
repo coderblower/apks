@@ -1,0 +1,55 @@
+@extends('master')
+@php
+    $title = $getProgramm->program_title;
+@endphp
+@section('title', 'Programme | ' .$title)
+@section('content')
+
+    <!-- Page Breadcrumbs Start -->
+    <section class="breadcrumbs-page-wrap">
+        <div class="bg-fixed pos-rel breadcrumbs-page">
+            <div class="container">
+                <h1>{{ $title }}</h1>
+                <nav aria-label="breadcrumb" class="breadcrumb-wrap">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Programme / {{ $title }}</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- Page Breadcrumbs End -->
+
+    <!-- Main Body Content Start -->
+    <main id="body-content">
+
+        <!-- About us start -->
+        <section class="wide-tb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="sidebar-spacer">
+
+                            <!-- about us=-->
+                            <div class="causes-wrap single">
+                                <div class="img-wrap">
+                                    <img src="{{ asset('apks/public/uploads/programmes/'.$getProgramm->program_logo) }}" alt="">
+                                </div>
+
+                                <div class="content-wrap-single">
+
+                                   {!! $getProgramm->program_description !!}
+                                </div>
+                            </div>
+                            <!-- about us-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About us end-->
+
+    </main>
+
+  @endsection
